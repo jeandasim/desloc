@@ -41,7 +41,7 @@ def plot_graphs(X, Y, dX, dY, dZ):
     return fig, np.max(dX), np.max(dY), np.max(dZ)
 
 # Configuração da página do Streamlit
-st.title("Visualizador de Arquivos .DAT")
+st.title("FLAC3D: Visualizador de subsidencia .DAT")
 
 # Carregar o arquivo .DAT
 uploaded_file = st.file_uploader("Carregar Arquivo .DAT", type="DAT")
