@@ -38,7 +38,7 @@ def plot_graphs(X, Y, dX, dY, dZ):
     axes[2].set_title('Deslocamento em Z (dZ)')
     fig.colorbar(sc3, ax=axes[2])
 
-    return fig, np.max(dX), np.max(dY), np.max(dZ)
+    return fig, np.min(dX), np.min(dY), np.min(dZ)
 
 # Configuração da página do Streamlit
 st.title("FLAC3D: Visualizador de subsidencia .DAT")
